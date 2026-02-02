@@ -517,11 +517,12 @@ button[type="submit"] {
     border: none;
     border-radius: 20px;
     background-color: #00c4ff;
-    color: ;
+   
 }
 button[type="submit"]:hover{
     background-color: #00f0ff;
 }
 .success{
     color: #00f0ff;
+    text-align: center;
 }

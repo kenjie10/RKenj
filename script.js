@@ -52,25 +52,29 @@ emailInput.addEventListener("input", () => {
 
 
 
-(function (){
-    emailjs.init({
-        publicKey: "1t2jsKbIZvSnbb3dG",        
-    });
-})();
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+emailjs.init({
+  publicKey: "1t2jsKbIZvSnbb3dG",
+});
+
+console.log("EmailJS:", emailjs);
 
 const form = document.getElementById('contact-form');
 const formStatus = document.getElementById('status');
 
 form.addEventListener("submit", function (e){
     e.preventDefault();
-
+    console.log("submit fired")
     emailjs.sendForm(
         "service_3oafl4v",
         "template_15801p4",
         this
     ).then( () => {
         console.log('success')
-        formStatus.textContent = "Message sent successfully";
+        formStatus.textContent = "Message sent successfully.";
         formStatus.classList.add("success")
         form.reset();
     }, (error) => {
@@ -78,4 +82,6 @@ form.addEventListener("submit", function (e){
         
         console.error(error);
     });
+});
+
 });
