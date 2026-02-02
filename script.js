@@ -53,7 +53,9 @@ emailInput.addEventListener("input", () => {
 
 
 (function (){
-    emailjs.init("1t2jsKbIZvSnbb3dG");
+    emailjs.init({
+        publicKey: "1t2jsKbIZvSnbb3dG",        
+    });
 })();
 
 const form = document.getElementById('contact-form');
@@ -67,6 +69,7 @@ form.addEventListener("submit", function (e){
         "template_15801p4",
         this
     ).then( () => {
+        console.log('success')
         formStatus.textContent = "Message sent successfully";
         formStatus.classList.add("success")
         form.reset();
