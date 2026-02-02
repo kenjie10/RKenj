@@ -67,13 +67,13 @@ const formStatus = document.getElementById('status');
 
 form.addEventListener("submit", function (e){
     e.preventDefault();
-    console.log("submit fired")
+    
     emailjs.sendForm(
         "service_3oafl4v",
         "template_15801p4",
         this
     ).then( () => {
-        console.log('success')
+       // console.log('success')
         formStatus.textContent = "Message sent successfully.";
         formStatus.classList.add("success")
         form.reset();
