@@ -1,8 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
 }
 html{
    scroll-behavior: smooth; 
@@ -16,8 +15,7 @@ body {
 h2{
     text-align: center;
     margin: 30px 0;
-    font-size: clamp(2rem, 2vw + 1rem , 2.6rem);
-    
+    font-size: clamp(2rem, 2vw + 1rem , 2.6rem);    
 }
 header{
     /*background-color: #09131c;*/
@@ -36,8 +34,7 @@ nav ul{
     margin: 0;
     padding: 10px;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 nav ul li {
     margin-left: 20px;
@@ -78,7 +75,7 @@ nav ul li a:hover{
     max-width: 55%;
 }
 .intro-text h1{
-    font-size: 48px;
+    font-size: clamp(24px,36px,48px);
     line-height: 1.2;
     color: #ffffff;
 }
@@ -113,8 +110,7 @@ nav ul li a:hover{
   transition: background-color 0.3s;
 }
 .more-btn:hover {
-  background-color: #00c4ff;
-  
+  background-color: #00c4ff; 
 }
 .intro-image {
   display: flex;
@@ -137,8 +133,6 @@ nav ul li a:hover{
 .services{
     padding: 10%;
 }
-
-
 .service-container{
     display: flex;
     justify-content: center;
@@ -148,7 +142,6 @@ nav ul li a:hover{
     color: #00c4ff;
 }
 
-
 .card {
   width: 350px;/*190px*/
   height: 314px;/*254px;*/
@@ -156,15 +149,13 @@ nav ul li a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 3px 1px #00000088;
-  
+  box-shadow: 0px 0px 3px 1px #00000088; 
   overflow: hidden;
   position: relative;
 }
 .card img{
     width: 40%;
 }
-/* */
 .card .content {
   border-radius: 5px;
   background: #1A242A;
@@ -256,8 +247,7 @@ nav ul li a:hover{
 .portfolio-btn{
     text-decoration: none;
     color: #09131c;
-    background-color: #00f0ff;
-    
+    background-color: #00f0ff;  
     margin: 0 15px;
     padding: 12px 20px;
 }
@@ -270,7 +260,6 @@ nav ul li a:hover{
     background-color: transparent;
     color: white;
     padding: 12px 20px;
-    
 }
 .contact-btn:hover{
     background-color: #00c4ff;
@@ -281,19 +270,12 @@ nav ul li a:hover{
 
 
 
-
-
-
-
-
 .skills{
     padding: 5% 15%;
- 
 }
 .skills-card{
     display: flex;
     flex-direction: column;
- 
     padding: 2rem;
     
 }
@@ -310,30 +292,24 @@ nav ul li a:hover{
 }
 
 .skills-card ul{
-   display: flex;
-  
+   display: flex; 
    flex-wrap: wrap;
    color: #c4c4c4;
- 
-   
- 
 }
 .skills-card ul li{
     margin: 0 20px;
 }
 
 .skills-card p{
-    
+   
     display: inline-flex;
     flex-wrap: wrap;
 }
-.skills-card span{
-    
+.skills-card span{ 
     padding: 5px 20px;
     margin: 5px;
     border-radius: 50px;
-    background-color: #374d5a;
-    
+    background-color: #374d5a;   
 }
 
 
@@ -358,7 +334,6 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
    justify-content: center;
-  
    gap: 15px;
 }
 .project-card:hover{
@@ -369,13 +344,9 @@ nav ul li a:hover{
     height: auto;
     margin: 0 auto;
 }
-.project-card h3{
-    
-}
 .project-card p{
    text-align: center;
-    color: #c4c4c4;
-    
+    color: #c4c4c4;   
 }
 .project-card p a{
     text-decoration: none;
@@ -406,18 +377,13 @@ nav ul li a:hover{
 }
 .project-icons i:hover{
     color: #0073e6;
-
 }
-
 .contact{
     padding: 5% 10% 5% 10%;
 }
 .contact-container{
     display: flex;
    justify-content: center;
-  
-    
-   
     padding: 5%;
 }
 .info-container{
@@ -446,17 +412,11 @@ nav ul li a:hover{
      border-radius: 20px;
 }
 form{
-    width: 100%;
-    
-}
-.contact-form p{
-    
-
+    width: 100%;    
 }
 .form-group{
     position: relative;
-    width: 100%;
-  
+    width: 100%; 
     margin-top: 30px;
     border: 1px solid #374d5a;
     border-radius: 50px;
@@ -482,7 +442,6 @@ form{
     transform: translateY(-10px);
     transition: 0.5s;
     pointer-events: none;
-
 }
 .form-group input:focus + label,
 .form-group input:valid + label{
@@ -520,8 +479,7 @@ button[type="submit"] {
     padding: 10px 25px;
     border: none;
     border-radius: 20px;
-    background-color: #00c4ff;
-   
+    background-color: #00c4ff;  
 }
 button[type="submit"]:hover{
     background-color: #00f0ff;
@@ -529,4 +487,24 @@ button[type="submit"]:hover{
 .success{
     color: #00f0ff;
     text-align: center;
+}
+/*resposive lay outs*/
+@media screen and (min-width: 768px) {
+    .cvbtn{
+        margin-right: 5px;
+        
+    }
+    .typing-animation{
+        display: block;
+    }
+    .intro-image{
+        width: 35%;
+    }
+    .intro-image img{
+      
+    }
+
+}
+@media (min-width: 480px){
+
 }
