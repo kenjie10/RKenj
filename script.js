@@ -1,3 +1,5 @@
+
+// Typing Animation
 document.addEventListener("DOMContentLoaded", function(){
     const words = ["Web Designer","Graphic Designer","Front-end Developer"];
     let wordIndex = 0;
@@ -34,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function(){
     type();
 });
 
+
+// Email Validation
 const emailInput = document.getElementById('email');
 const emailLabel = document.querySelector('label[for="email"]');
 
@@ -53,7 +57,7 @@ emailInput.addEventListener("input", () => {
 
 
 
-
+// EmailJS Integration
 document.addEventListener("DOMContentLoaded", function () {
 
 emailjs.init({
@@ -78,15 +82,14 @@ form.addEventListener("submit", function (e){
         formStatus.classList.add("success")
         form.reset();
     }, (error) => {
-        formStatus.textContent = "Failed to send";
-        
+        formStatus.textContent = "Failed to send"; 
         console.error(error);
     });
 });
 
 });
 
-
+// Navigation Menu Toggle
 const menuBtn = document.getElementById("menuBtn");
 const navMenu = document.getElementById("navMenu");
 
