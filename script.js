@@ -67,7 +67,7 @@ const formStatus = document.getElementById('status');
 
 form.addEventListener("submit", function (e){
     e.preventDefault();
-    
+
     emailjs.sendForm(
         "service_3oafl4v",
         "template_15801p4",
@@ -85,3 +85,5 @@ form.addEventListener("submit", function (e){
 });
 
 });
+
+
